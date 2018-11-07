@@ -12,3 +12,5 @@ Lab01/Lab01/Lab01\.vcxproj
 Lab01/Lab01/Lab01\.vcxproj\.filters
 
 Lab01/Lab01/Lab01\.vcxproj\.user
+
+Lab01/Lab01/pch\.cpp
