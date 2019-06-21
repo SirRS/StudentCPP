@@ -1,0 +1,7 @@
+Doyle,C. 1887 30 Sherlock Holmes
+Fitzgerald,F.S. 1965 20 The Great Gatsby
+Tolkien,J.R.R. 1976 10 The Lord of the Rings 
+Bradbury,R. 1989 15 Fahrenheit 451
+Rowling,J.K. 1997 40 Harry Potter and the Sorcerer's Stone
+Martin,G.R.R. 2002 70 A Game of Thrones
+
