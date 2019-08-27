@@ -88,6 +88,7 @@ public:
                     if (vvod[i] == '(') {
                         proof = 1; sk++; znak[znn] = vvod[i]; znn++;
                         if ((vvod[i + 1] < 48 || vvod[i + 1] >57) && vvod[i + 1] != '(') { proof = 0; }
+                        if (vvod[i+1] == '-'){chisl[chn] = 0; chn++; proof = 1;}
                     }
                     if (vvod[i] == ')') {
                         proof = 1; sk--; znak[znn] = vvod[i]; znn++; if (sk < 0) { proof = 0; }
@@ -108,6 +109,7 @@ public:
                             }
                         }
                         chn++;
+                        if (vvod[i+1]== '('){ znak[znn] = '*'; znn++;}
                     }
                 }
                 if (sk != 0) { proof = 0;}
@@ -187,9 +189,11 @@ private slots:
 
     void on_pushButton_log_clicked();
 
-    void on_pushButton_clear_clicked();
-
     void on_pushButton_clearall_clicked();
+
+    void on_pushButton_undo_clicked();
+
+    void on_pushButton_redo_clicked();
 
 private:
     Ui::MainWindow *ui;
