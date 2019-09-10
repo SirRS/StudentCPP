@@ -115,6 +115,7 @@ void MainWindow::on_pushButton_execute_clicked()
     calculator calculator;
     ui->label->setText(calculator.execute(text));
     save_step(ui->label->text(),ui->label->text());
+    beauty = ""; text = "";
 }
 
 void MainWindow::on_pushButton_zero_clicked()
@@ -263,7 +264,7 @@ void MainWindow::on_pushButton_closebr_clicked()
 void MainWindow::on_pushButton_mult_clicked()
 {
     text = text + '*';
-    beauty = beauty + "✖";
+    beauty = beauty + "×";
     if (pow_border != 0) {
         pow();
     }
