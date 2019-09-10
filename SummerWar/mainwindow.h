@@ -26,7 +26,7 @@ private:
         if (znak[*i] == '/' || znak[*i] == '*' || znak[*i] == '#' || znak[*i] == '^' || znak[*i] == '%' || znak[*i] == '&') {
                 if (znak[*i] == '&') {
                     if (chisl[*i] == 0. || chisl[*i + 1] == 0.) { *proof = 0; chisl[*i] = 1; chisl[*i + 1] = 1; }
-                    chisl[*i + 1] = double(log(chisl[*i]) / log(chisl[*i + 1]));
+                    chisl[*i + 1] = double(log(chisl[*i+1]) / log(chisl[*i]));
                 }
                 if (znak[*i] == '#') {
                     if (chisl[*i + 1] < 0) { *proof = 0; chisl[*i] = 1; chisl[*i + 1] = 1; }
@@ -81,7 +81,7 @@ public:
                     if (vvod[i] == ' '){
                         proof = 1;
                     }
-                    if (vvod[i] == '+' || vvod[i] == '-' || vvod[i] == '*' || vvod[i] == '/' || vvod[i] == '%' || vvod[i] == '#' || vvod[i] == '^') {
+                    if (vvod[i] == '+' || vvod[i] == '-' || vvod[i] == '*' || vvod[i] == '/' || vvod[i] == '%' || vvod[i] == '#' || vvod[i] == '^' || vvod[i] == '&') {
                         proof = 1; znak[znn] = vvod[i]; znn++;
                         if ((vvod[i + 1] < 48 || vvod[i + 1] >57) && vvod[i + 1] != '(') { proof = 0; }
                     }
